@@ -5,21 +5,21 @@
 class Gitspork < Formula
   desc "When a fork just ain't good enough — a tool for managing upstream/downstream git repo relationships"
   homepage "https://github.com/rockholla/gitspork"
-  version "2.5.0"
+  version "2.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rockholla/gitspork/releases/download/v2.5.0/gitspork_Darwin_x86_64.tar.gz"
-      sha256 "9463665ff076b4a04789b1ece63a3ebc00d84d48fc04f5ae0e0bda87fef5fc12"
+      url "https://github.com/rockholla/gitspork/releases/download/v2.6.0/gitspork_Darwin_x86_64.tar.gz"
+      sha256 "20e5f37a63351ac5713762454eb395332659cf130153e939ab5ddb88fd95425f"
 
       define_method(:install) do
         bin.install "gitspork"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rockholla/gitspork/releases/download/v2.5.0/gitspork_Darwin_arm64.tar.gz"
-      sha256 "c10f94b31cafbc52c17baacd1befaa2fa57456992a82db30b59d829d2fa327e7"
+      url "https://github.com/rockholla/gitspork/releases/download/v2.6.0/gitspork_Darwin_arm64.tar.gz"
+      sha256 "8babb9d0479f41fa31ae922ede961c3503d3b1ce990089a3939af134408d26e6"
 
       define_method(:install) do
         bin.install "gitspork"
@@ -29,22 +29,22 @@ class Gitspork < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rockholla/gitspork/releases/download/v2.5.0/gitspork_Linux_x86_64.tar.gz"
-      sha256 "311d3e54783bdd837ea42ee0bf782303d16d8793545bb843c724c331097fa7a3"
+      url "https://github.com/rockholla/gitspork/releases/download/v2.6.0/gitspork_Linux_x86_64.tar.gz"
+      sha256 "7bf7e73453d315bf8674da531898567bf46a1fe05e19c38b584ec3118eacb67c"
       define_method(:install) do
         bin.install "gitspork"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/rockholla/gitspork/releases/download/v2.5.0/gitspork_Linux_armv6.tar.gz"
-      sha256 "82a1fd4e5c5466eb7e264fd11ff8f1e3b07c4ca04853172528d1c0908e7688a5"
+      url "https://github.com/rockholla/gitspork/releases/download/v2.6.0/gitspork_Linux_armv6.tar.gz"
+      sha256 "4ce451b97fa6545363848f97495e36fb9ae3b63c4740aae4d7607e1e5ab7df06"
       define_method(:install) do
         bin.install "gitspork"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rockholla/gitspork/releases/download/v2.5.0/gitspork_Linux_arm64.tar.gz"
-      sha256 "1badf0e15832aa3d71c845cc757d3bd8e6537279b89d846cddb9b82bb87e6d3b"
+      url "https://github.com/rockholla/gitspork/releases/download/v2.6.0/gitspork_Linux_arm64.tar.gz"
+      sha256 "634adb28a41a3157e9538d1539de9dad140f3a59192e1db6c25d59194c88b1b5"
       define_method(:install) do
         bin.install "gitspork"
       end
